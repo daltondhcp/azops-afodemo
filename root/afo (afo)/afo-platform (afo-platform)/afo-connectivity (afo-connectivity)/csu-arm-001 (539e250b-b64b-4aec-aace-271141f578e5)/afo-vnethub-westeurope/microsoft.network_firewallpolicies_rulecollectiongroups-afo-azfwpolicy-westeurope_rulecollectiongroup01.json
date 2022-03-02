@@ -42,6 +42,25 @@
                 "destinationPorts": [
                   "53"
                 ]
+              },
+                     {
+                "ruleType": "NetworkRule",
+                "name": "Allow_SSH",
+                "ipProtocols": [
+                  "TCP"
+                ],
+                "sourceAddresses": [
+                  "*"
+                ],
+                "sourceIpGroups": [],
+                "destinationAddresses": [
+                  "*"
+                ],
+                "destinationIpGroups": [],
+                "destinationFqdns": [],
+                "destinationPorts": [
+                  "22"
+                ]
               }
             ],
             "name": "RuleCollection01",
