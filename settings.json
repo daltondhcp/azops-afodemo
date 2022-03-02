@@ -34,7 +34,7 @@
                 "Microsoft.VSOnline/plans"
             ],
             "Core.SkipRole": false,
-            "Core.SubscriptionsToIncludeResourceGroups": "*",
+            "Core.SubscriptionsToIncludeResourceGroups": "CSU-ARM-001",
             "Core.TemplateParameterFileSuffix": ".json",
             "Core.ThrottleLimit": 10,
             "Core.WhatifExcludedChangeTypes":[
