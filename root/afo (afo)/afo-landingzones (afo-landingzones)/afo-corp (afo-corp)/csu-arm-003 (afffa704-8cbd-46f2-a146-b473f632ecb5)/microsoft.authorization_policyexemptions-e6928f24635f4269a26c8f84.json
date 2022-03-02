@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyExemptions",
+      "name": "e6928f24635f4269a26c8f84",
+      "apiVersion": "2020-07-01-preview",
+      "properties": {
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/AfO-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-AKS-HTTPS",
+        "PolicyDefinitionReferenceIds": [],
+        "ExemptionCategory": "Waiver",
+        "DisplayName": "CSU-ARM-003 - Kubernetes clusters should be accessible only over HTTPS",
+        "Description": null,
+        "ExpiresOn": null
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "c02ce875-d705-42f3-9250-72b03e1244b6",
+      "apiVersion": "2021-04-01-preview",
+      "properties": {
+        "DisplayName": "d0ab5c1633ca49698d810e6c",
+        "ObjectType": "ServicePrincipal",
+        "PrincipalId": "94926e35-650e-455f-aa9c-e7533346cdd6",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/81a9662b-bebf-436f-a333-f67b29880f12",
+        "RoleDefinitionName": "Storage Account Key Operator Service Role"
+      }
+    }
+  ],
+  "outputs": {}
+}

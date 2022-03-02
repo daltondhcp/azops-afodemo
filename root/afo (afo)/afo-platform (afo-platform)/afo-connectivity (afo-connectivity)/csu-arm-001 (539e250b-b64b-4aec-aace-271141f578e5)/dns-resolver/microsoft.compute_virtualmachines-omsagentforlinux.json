@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "name": "OMSAgentForLinux",
+      "apiVersion": "2021-11-01",
+      "location": "westeurope",
+      "tags": null,
+      "properties": {
+        "autoUpgradeMinorVersion": true,
+        "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+        "type": "OmsAgentForLinux",
+        "typeHandlerVersion": "1.13",
+        "settings": {
+          "workspaceId": "5b5826fa-3bd7-4537-853b-a07fcbd9a706",
+          "stopOnMultipleConnections": "true"
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

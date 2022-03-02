@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "116283e63ae648a49c3022a9",
+      "apiVersion": "2021-06-01",
+      "location": null,
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/AfO-telco-specialized",
+        "NotScopes": [],
+        "DisplayName": "Ensure that Public Ip addresses for Telco is highly-available",
+        "Description": null,
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/AfO/providers/Microsoft.Authorization/policyDefinitions/Deny-Non-Ha-Pip",
+        "Parameters": {},
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}

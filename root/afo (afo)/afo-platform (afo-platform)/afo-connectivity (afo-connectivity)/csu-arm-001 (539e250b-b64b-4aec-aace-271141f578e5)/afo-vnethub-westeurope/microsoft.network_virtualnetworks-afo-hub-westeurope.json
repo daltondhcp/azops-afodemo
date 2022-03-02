@@ -1,0 +1,138 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/virtualNetworks",
+      "name": "AfO-hub-westeurope",
+      "apiVersion": "2021-12-01",
+      "location": "westeurope",
+      "tags": null,
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.100.0.0/16"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "AzureFirewallSubnet",
+            "properties": {
+              "addressPrefix": "10.100.0.0/24",
+              "ipConfigurations": [
+                {}
+              ],
+              "delegations": [],
+              "privateEndpointNetworkPolicies": "Enabled",
+              "privateLinkServiceNetworkPolicies": "Enabled"
+            },
+            "type": "Microsoft.Network/virtualNetworks/subnets"
+          },
+          {
+            "name": "DnsResolver",
+            "properties": {
+              "addressPrefix": "10.100.1.0/24",
+              "ipConfigurations": [
+                {}
+              ],
+              "serviceEndpoints": [],
+              "delegations": [],
+              "privateEndpointNetworkPolicies": "Enabled",
+              "privateLinkServiceNetworkPolicies": "Enabled"
+            },
+            "type": "Microsoft.Network/virtualNetworks/subnets"
+          }
+        ],
+        "virtualNetworkPeerings": [
+          {
+            "name": "c62c2473-9d97-4014-a42c-dd41f1b3c5e7AfO-vnet-westeurope",
+            "properties": {
+              "peeringState": "Disconnected",
+              "peeringSyncLevel": "FullyInSync",
+              "remoteVirtualNetwork": {},
+              "allowVirtualNetworkAccess": true,
+              "allowForwardedTraffic": true,
+              "allowGatewayTransit": true,
+              "useRemoteGateways": false,
+              "doNotVerifyRemoteGateways": false,
+              "peerCompleteVnets": true,
+              "remoteAddressSpace": {
+                "addressPrefixes": [
+                  "10.110.0.0/24"
+                ]
+              },
+              "remoteVirtualNetworkAddressSpace": {
+                "addressPrefixes": [
+                  "10.110.0.0/24"
+                ]
+              },
+              "routeServiceVips": {}
+            },
+            "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+          },
+          {
+            "name": "peerLZ",
+            "properties": {
+              "peeringState": "Connected",
+              "peeringSyncLevel": "FullyInSync",
+              "remoteVirtualNetwork": {},
+              "allowVirtualNetworkAccess": true,
+              "allowForwardedTraffic": true,
+              "allowGatewayTransit": false,
+              "useRemoteGateways": false,
+              "doNotVerifyRemoteGateways": false,
+              "peerCompleteVnets": true,
+              "remoteAddressSpace": {
+                "addressPrefixes": [
+                  "192.168.0.0/20"
+                ]
+              },
+              "remoteVirtualNetworkAddressSpace": {
+                "addressPrefixes": [
+                  "192.168.0.0/20"
+                ]
+              },
+              "routeServiceVips": {}
+            },
+            "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+          },
+          {
+            "name": "ToSpoke-2",
+            "properties": {
+              "peeringState": "Connected",
+              "peeringSyncLevel": "FullyInSync",
+              "remoteVirtualNetwork": {},
+              "allowVirtualNetworkAccess": true,
+              "allowForwardedTraffic": true,
+              "allowGatewayTransit": false,
+              "useRemoteGateways": false,
+              "doNotVerifyRemoteGateways": false,
+              "peerCompleteVnets": true,
+              "remoteAddressSpace": {
+                "addressPrefixes": [
+                  "192.168.16.0/20"
+                ]
+              },
+              "remoteVirtualNetworkAddressSpace": {
+                "addressPrefixes": [
+                  "192.168.16.0/20"
+                ]
+              },
+              "routeServiceVips": {}
+            },
+            "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+          }
+        ],
+        "enableDdosProtection": false
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+      "apiVersion": "2020-11-01",
+      "name": "ESIndustry-hub-westeurope/hub-to-csuarm004",
+      "properties": {
+        "peeringState": "Disconnected",
+        "remoteVirtualNetwork": {
+          "id": "/subscriptions/1f6c9a98-a387-420d-853c-9d27cfda0f33/resourceGroups/networking/providers/Microsoft.Network/virtualNetworks/csu-arm-004-vnet"
+        },
+        "allowVirtualNetworkAccess": true,
+        "allowForwardedTraffic": true,
+        "allowGatewayTransit": false,
+        "useRemoteGateways": false,
+        "remoteAddressSpace": {
+          "addressPrefixes": [
+            "10.2.0.0/24"
+          ]
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

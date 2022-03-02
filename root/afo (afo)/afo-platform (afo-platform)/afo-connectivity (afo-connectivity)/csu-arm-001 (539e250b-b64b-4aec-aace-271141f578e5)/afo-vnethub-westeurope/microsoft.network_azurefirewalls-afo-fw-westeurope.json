@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/azureFirewalls",
+      "name": "AfO-fw-westeurope",
+      "apiVersion": "2021-12-01",
+      "location": "westeurope",
+      "tags": null,
+      "properties": {
+        "sku": {
+          "name": "AZFW_VNet",
+          "tier": "Standard"
+        },
+        "threatIntelMode": "Alert",
+        "additionalProperties": {},
+        "ipConfigurations": [
+          {
+            "name": "AfO-fw-westeurope-pip",
+            "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/azureFirewalls/AfO-fw-westeurope/azureFirewallIpConfigurations/AfO-fw-westeurope-pip",
+            "etag": "W/\"82479f0c-0ea3-4f2c-ad71-124eef3d49ac\"",
+            "type": "Microsoft.Network/azureFirewalls/azureFirewallIpConfigurations",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "privateIPAddress": "10.100.0.4",
+              "privateIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/publicIPAddresses/AfO-fw-westeurope-pip"
+              },
+              "subnet": {
+                "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/virtualNetworks/AfO-hub-westeurope/subnets/AzureFirewallSubnet"
+              }
+            }
+          }
+        ],
+        "networkRuleCollections": [],
+        "applicationRuleCollections": [],
+        "natRuleCollections": [],
+        "firewallPolicy": {
+          "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/firewallPolicies/AfO-azfwpolicy-westeurope"
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}
