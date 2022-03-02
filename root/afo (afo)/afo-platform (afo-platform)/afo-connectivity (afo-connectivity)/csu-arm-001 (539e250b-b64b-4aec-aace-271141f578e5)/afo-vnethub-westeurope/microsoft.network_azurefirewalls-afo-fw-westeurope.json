@@ -26,7 +26,7 @@
           {
             "name": "AfO-fw-westeurope-pip",
             "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/azureFirewalls/AfO-fw-westeurope/azureFirewallIpConfigurations/AfO-fw-westeurope-pip",
-            "etag": "W/\"82479f0c-0ea3-4f2c-ad71-124eef3d49ac\"",
+            "etag": "W/\"b7d749fc-4ed5-4e61-ac21-6bea843c6115\"",
             "type": "Microsoft.Network/azureFirewalls/azureFirewallIpConfigurations",
             "properties": {
               "provisioningState": "Succeeded",
