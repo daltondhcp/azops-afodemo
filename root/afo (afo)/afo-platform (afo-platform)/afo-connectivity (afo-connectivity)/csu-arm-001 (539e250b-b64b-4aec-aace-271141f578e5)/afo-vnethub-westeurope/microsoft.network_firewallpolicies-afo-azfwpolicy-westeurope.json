@@ -21,7 +21,11 @@
         },
         "threatIntelMode": "Alert",
         "childPolicies": [],
-        "ruleCollectionGroups": [],
+        "ruleCollectionGroups": [
+          {
+            "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/firewallPolicies/AfO-azfwpolicy-westeurope/ruleCollectionGroups/RuleCollectionGroup01"
+          }
+        ],
         "firewalls": [
           {
             "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-vnethub-westeurope/providers/Microsoft.Network/azureFirewalls/AfO-fw-westeurope"
