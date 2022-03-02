@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+      "name": "linkingofprivatelink.adf.azure.com",
+      "apiVersion": "2020-06-01",
+      "location": "global",
+      "tags": null,
+      "properties": {
+        "registrationEnabled": false,
+        "virtualNetwork": {
+          "id": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/megat-vnethub-westeurope/providers/Microsoft.Network/virtualNetworks/megat-hub-westeurope"
+        },
+        "virtualNetworkLinkState": "Completed"
+      }
+    }
+  ],
+  "outputs": {}
+}

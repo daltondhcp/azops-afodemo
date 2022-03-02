@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyExemptions",
+      "name": "ce0fcf94f6134ae9b1294c91",
+      "apiVersion": "2020-07-01-preview",
+      "properties": {
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/AfO-corp/providers/Microsoft.Authorization/policyAssignments/Deny-Public-Endpoints",
+        "PolicyDefinitionReferenceIds": [],
+        "ExemptionCategory": "Waiver",
+        "DisplayName": "CSU-ARM-003 - Public network access should be disabled for PaaS services",
+        "Description": null,
+        "ExpiresOn": null
+      }
+    }
+  ],
+  "outputs": {}
+}

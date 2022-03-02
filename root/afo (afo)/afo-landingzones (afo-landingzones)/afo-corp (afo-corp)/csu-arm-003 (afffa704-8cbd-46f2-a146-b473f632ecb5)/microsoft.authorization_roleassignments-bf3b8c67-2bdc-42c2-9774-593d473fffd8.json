@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "bf3b8c67-2bdc-42c2-9774-593d473fffd8",
+      "apiVersion": "2021-04-01-preview",
+      "properties": {
+        "DisplayName": "eslz-alwayson-deployment-sp",
+        "ObjectType": "ServicePrincipal",
+        "PrincipalId": "a795ce90-e0e5-4825-9d8e-e8750a05a3c5",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "RoleDefinitionName": "Owner"
+      }
+    }
+  ],
+  "outputs": {}
+}

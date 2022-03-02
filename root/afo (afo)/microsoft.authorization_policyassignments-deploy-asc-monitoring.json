@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-ASC-Monitoring",
+      "apiVersion": "2021-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "403e6632-4ee2-457f-b1d0-4bdad660a372",
+        "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/AfO",
+        "NotScopes": [],
+        "DisplayName": "Azure Security Benchmark",
+        "Description": "Azure Security Benchmark policy initiative",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+        "Parameters": {
+          "useServicePrincipalToProtectSubscriptionsMonitoringEffect": {
+            "value": "Disabled"
+          },
+          "useRbacRulesMonitoringEffect": {
+            "value": "Disabled"
+          },
+          "identityDesignateLessThanOwnersMonitoringEffect": {
+            "value": "Disabled"
+          },
+          "identityEnableMFAForOwnerPermissionsMonitoringEffect": {
+            "value": "Disabled"
+          },
+          "allowedservicePortsInKubernetesClusterPorts": {
+            "value": [
+              "80",
+              "8080",
+              "443"
+            ]
+          },
+          "autoProvisioningOfTheLogAnalyticsAgentShouldBeEnabledOnYourSubscriptionMonitoringEffect": {
+            "value": "Disabled"
+          },
+          "networkWatcherShouldBeEnabledMonitoringEffect": {
+            "value": "Disabled"
+          }
+        },
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}

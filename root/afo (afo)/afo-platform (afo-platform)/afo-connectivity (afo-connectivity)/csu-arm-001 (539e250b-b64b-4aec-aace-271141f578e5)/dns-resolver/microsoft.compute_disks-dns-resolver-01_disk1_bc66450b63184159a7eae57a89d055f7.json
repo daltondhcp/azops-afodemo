@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Compute/disks",
+      "name": "dns-resolver-01_disk1_bc66450b63184159a7eae57a89d055f7",
+      "apiVersion": "2021-12-01",
+      "location": "westeurope",
+      "tags": null,
+      "properties": {
+        "osType": "Linux",
+        "hyperVGeneration": "V2",
+        "supportedCapabilities": {
+          "architecture": "x64"
+        },
+        "creationData": {
+          "createOption": "FromImage",
+          "imageReference": {
+            "id": "/Subscriptions/5cd0a4d5-087e-4d22-887d-6ddf32afde2c/Providers/Microsoft.Compute/Locations/westeurope/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-focal/Skus/20_04-lts-gen2/Versions/20.04.202201180"
+          }
+        },
+        "diskSizeGB": 30,
+        "diskIOPSReadWrite": 120,
+        "diskMBpsReadWrite": 25,
+        "encryption": {
+          "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "publicNetworkAccess": "Enabled",
+        "diskState": "Attached",
+        "diskSizeBytes": 32213303296,
+        "uniqueId": "bc66450b-6318-4159-a7ea-e57a89d055f7",
+        "tier": "P4"
+      }
+    }
+  ],
+  "outputs": {}
+}

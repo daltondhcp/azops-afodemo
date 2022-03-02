@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "faefe37a-65c1-4ef0-b6ae-17cb356190c6",
+      "apiVersion": "2021-04-01-preview",
+      "properties": {
+        "DisplayName": "4e1f2d1bfa9b46b6a7908042",
+        "ObjectType": "ServicePrincipal",
+        "PrincipalId": "248f8887-a68c-4f77-b408-5d25123e35f4",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+        "RoleDefinitionName": "Monitoring Contributor"
+      }
+    }
+  ],
+  "outputs": {}
+}

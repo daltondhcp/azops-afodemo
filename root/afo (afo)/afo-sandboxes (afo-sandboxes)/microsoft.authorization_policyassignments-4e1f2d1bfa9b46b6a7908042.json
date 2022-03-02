@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "4e1f2d1bfa9b46b6a7908042",
+      "apiVersion": "2021-06-01",
+      "location": "eastus",
+      "identity": {
+        "PrincipalId": "248f8887-a68c-4f77-b408-5d25123e35f4",
+        "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/AfO-sandboxes",
+        "NotScopes": [],
+        "DisplayName": "HITRUST/HIPAA",
+        "Description": null,
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/a169a624-5599-4385-a696-c8d643089fab",
+        "Parameters": {
+          "installedApplicationsOnWindowsVM": {
+            "value": "*"
+          },
+          "DeployDiagnosticSettingsforNetworkSecurityGroupsstoragePrefix": {
+            "value": "asdfasdf"
+          },
+          "DeployDiagnosticSettingsforNetworkSecurityGroupsrgName": {
+            "value": "afo-mgmt"
+          },
+          "CertificateThumbprints": {
+            "value": "*"
+          }
+        },
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}
