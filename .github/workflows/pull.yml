@@ -45,6 +45,11 @@ on:
     branches: [main]
     types:
       - completed
+  
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
 
 env:
   #
