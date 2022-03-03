@@ -43,7 +43,7 @@
                   "53"
                 ]
               },
-                     {
+              {
                 "ruleType": "NetworkRule",
                 "name": "Allow_SSH",
                 "ipProtocols": [
