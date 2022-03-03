@@ -68,7 +68,7 @@ runs:
    #      $azParams.Environment = '${{env.ARM_ENVIRONMENT}}'
    #    }
    #    Connect-AzAccount -ServicePrincipal @azParams
-   - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
+    - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
         uses: azure/login@v1
         with:
           client-id: ${{ env.ARM_CLIENT_ID}}
