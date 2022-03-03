@@ -45,7 +45,14 @@ on:
     branches: [main]
     types:
       - completed
-            pull-requests: write
+  
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+env:
+  #
   # Credentials
   #
 
@@ -104,7 +111,7 @@ on:
 
   #
   # Pull Request
-  # The generated Pull Request for the Pull workflow can be
+  # The generated Pull Request for the Pull workflow can be
   # modified to help indicate when changes we're merged in the
   # Git history.
   #
@@ -121,6 +128,7 @@ jobs:
 
     name: "Pull"
     runs-on: ubuntu-20.04
+    environment: test
 
     #
     # Only run Pull after successful Push or on manually triggered/scheduled events
@@ -178,6 +186,9 @@ jobs:
       - name: "Initialize"
         shell: pwsh
         run: |
+          $AzContext = Get-AzContext
+          Get-AzADServicePrincipal -ApplicationId $AzContext.Account.Id
+          write-host $azcontext.account.id
           Import-PSFConfig -Path settings.json -Schema MetaJson -EnableException
           if ($env:ACTION -eq "Enterprise-Scale Deployment") {
             Set-PSFConfig -FullName AzOps.Core.SkipResource -Value $false
