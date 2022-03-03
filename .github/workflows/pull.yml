@@ -188,7 +188,7 @@ jobs:
         run: |
           $AzContext = Get-AzContext
           Get-AzADServicePrincipal -ApplicationId $AzContext.Account.Id
-          Write-Host $AzContext
+          ($AzContext | ConvertTo-Json -Depth 100)
           Import-PSFConfig -Path settings.json -Schema MetaJson -EnableException
           if ($env:ACTION -eq "Enterprise-Scale Deployment") {
             Set-PSFConfig -FullName AzOps.Core.SkipResource -Value $false
