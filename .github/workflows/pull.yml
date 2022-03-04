@@ -71,7 +71,7 @@ env:
   # that can be cached.
   #
 
-  #modulesFolder: "~/.local/share/powershell/Modules"
+  modulesFolder: "~/.local/share/powershell/Modules"
 
   #
   # Folder Name
