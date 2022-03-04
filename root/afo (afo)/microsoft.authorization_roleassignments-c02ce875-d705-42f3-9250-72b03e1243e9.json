@@ -15,7 +15,7 @@
       "apiVersion": "2021-04-01-preview",
       "properties": {
         "DisplayName": null,
-        "ObjectType": "ServicePrincipal",
+        "ObjectType": "Unknown",
         "PrincipalId": "75b99682-fe81-4bbc-8db9-2b0fa917d9c7",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/749f88d5-cbae-40b8-bcfc-e573ddc772fa",
         "RoleDefinitionName": "Monitoring Contributor"
