@@ -45,9 +45,8 @@
               },
               {
                 "ruleType": "NetworkRule",
-                "name": "Allow_DNS",
+                "name": "Allow_SSH",
                 "ipProtocols": [
-                  "UDP",
                   "TCP"
                 ],
                 "sourceAddresses": [
