@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Authorization/roleAssignments",
       "name": "2af35e40-2907-5752-9dbe-5aca0d39c222",
-      "apiVersion": "2022-01-01-preview",
+      "apiVersion": "2021-04-01-preview",
       "properties": {
         "DisplayName": "Deploy-VM-Backup",
         "ObjectType": "ServicePrincipal",
