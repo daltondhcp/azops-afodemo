@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Authorization/roleAssignments",
       "name": "64cb90ba-49be-4a7b-85b3-f710ce869e02",
-      "apiVersion": "2021-04-01-preview",
+      "apiVersion": "2022-01-01-preview",
       "properties": {
         "DisplayName": "Marvin Buss",
         "ObjectType": "User",
