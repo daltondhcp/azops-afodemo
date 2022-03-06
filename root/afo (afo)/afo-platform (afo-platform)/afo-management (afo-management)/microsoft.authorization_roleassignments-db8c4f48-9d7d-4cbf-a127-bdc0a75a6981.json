@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Authorization/roleAssignments",
       "name": "db8c4f48-9d7d-4cbf-a127-bdc0a75a6981",
-      "apiVersion": "2022-01-01-preview",
+      "apiVersion": "2021-04-01-preview",
       "properties": {
         "DisplayName": "Kristian Nese",
         "ObjectType": "User",
