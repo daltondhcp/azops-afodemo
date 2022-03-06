@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Authorization/roleAssignments",
       "name": "bf3b8c67-2bdc-42c2-9774-593d473fffd8",
-      "apiVersion": "2022-01-01-preview",
+      "apiVersion": "2021-04-01-preview",
       "properties": {
         "DisplayName": "eslz-alwayson-deployment-sp",
         "ObjectType": "ServicePrincipal",
