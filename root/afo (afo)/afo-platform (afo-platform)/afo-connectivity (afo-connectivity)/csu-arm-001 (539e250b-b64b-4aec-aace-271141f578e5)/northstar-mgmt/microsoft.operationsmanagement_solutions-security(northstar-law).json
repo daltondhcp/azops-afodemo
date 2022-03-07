@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.OperationsManagement/solutions",
+      "name": "Security(NorthStar-law)",
+      "apiVersion": "2015-11-01-preview",
+      "location": "West Europe",
+      "tags": null,
+      "properties": {
+        "workspaceResourceId": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourcegroups/NorthStar-mgmt/providers/Microsoft.OperationalInsights/workspaces/NorthStar-law",
+        "containedResources": [
+          "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourcegroups/NorthStar-mgmt/providers/Microsoft.OperationalInsights/workspaces/NorthStar-law/views/Security(NorthStar-law)"
+        ]
+      }
+    }
+  ],
+  "outputs": {}
+}
