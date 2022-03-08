@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.operationalinsights/workspaces/linkedservices",
+      "apiVersion": "2020-08-01",
+      "name": "northstar-law/automation",
+      "properties": {
+        "resourceId": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/NorthStar-mgmt/providers/Microsoft.Automation/automationAccounts/NorthStar-aauto",
+        "provisioningState": "Succeeded"
+      }
+    }
+  ],
+  "outputs": {}
+}
