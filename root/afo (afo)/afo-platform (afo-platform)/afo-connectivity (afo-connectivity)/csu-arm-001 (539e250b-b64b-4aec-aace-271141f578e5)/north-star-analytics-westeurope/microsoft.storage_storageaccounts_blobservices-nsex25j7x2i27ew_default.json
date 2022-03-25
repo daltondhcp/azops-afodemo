@@ -18,14 +18,14 @@
         "tier": "Standard"
       },
       "properties": {
-        "containerDeleteRetentionPolicy": {
-          "enabled": true,
-          "days": 7
-        },
         "cors": {
           "corsRules": []
         },
         "deleteRetentionPolicy": {
+          "enabled": true,
+          "days": 7
+        },
+        "containerDeleteRetentionPolicy": {
           "enabled": true,
           "days": 7
         }
