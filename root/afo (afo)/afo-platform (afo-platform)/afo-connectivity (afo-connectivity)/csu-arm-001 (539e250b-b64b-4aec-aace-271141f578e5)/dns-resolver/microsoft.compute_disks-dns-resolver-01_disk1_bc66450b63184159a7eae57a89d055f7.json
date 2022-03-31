@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Compute/disks",
       "name": "dns-resolver-01_disk1_bc66450b63184159a7eae57a89d055f7",
-      "apiVersion": "2021-12-01",
+      "apiVersion": "2022-03-02",
       "location": "westeurope",
       "tags": null,
       "properties": {
