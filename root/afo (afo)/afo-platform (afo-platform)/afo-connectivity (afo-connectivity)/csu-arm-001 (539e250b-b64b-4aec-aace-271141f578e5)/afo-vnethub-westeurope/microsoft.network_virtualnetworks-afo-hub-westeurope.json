@@ -26,9 +26,6 @@
             "name": "AzureFirewallSubnet",
             "properties": {
               "addressPrefix": "10.100.0.0/24",
-              "ipConfigurations": [
-                {}
-              ],
               "delegations": [],
               "privateEndpointNetworkPolicies": "Enabled",
               "privateLinkServiceNetworkPolicies": "Enabled"
