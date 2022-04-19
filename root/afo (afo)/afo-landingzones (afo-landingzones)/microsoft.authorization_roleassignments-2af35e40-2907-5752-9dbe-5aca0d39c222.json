@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-VM-Backup",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "c95614b6-b096-479a-bf8b-f8a30348a73f",
+        "PrincipalId": "836b52d3-7ac3-41eb-bd5d-3aab93e0a600",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"
       }

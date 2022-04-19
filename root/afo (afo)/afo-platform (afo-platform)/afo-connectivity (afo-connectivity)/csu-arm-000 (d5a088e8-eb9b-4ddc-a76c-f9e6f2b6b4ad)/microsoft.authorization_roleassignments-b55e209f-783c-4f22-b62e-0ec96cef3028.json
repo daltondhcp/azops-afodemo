@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "b55e209f-783c-4f22-b62e-0ec96cef3028",
+      "apiVersion": "2022-01-01-preview",
+      "properties": {
+        "DisplayName": "Ken Auguillard",
+        "ObjectType": "User",
+        "PrincipalId": "f4622b63-cf0b-443f-a4a1-5b31b8e40f5f",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "RoleDefinitionName": "Owner"
+      }
+    }
+  ],
+  "outputs": {}
+}

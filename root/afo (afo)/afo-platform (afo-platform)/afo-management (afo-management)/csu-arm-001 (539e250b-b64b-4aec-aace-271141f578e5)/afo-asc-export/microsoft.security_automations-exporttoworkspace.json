@@ -1,0 +1,152 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Security/automations",
+      "name": "ExportToWorkspace",
+      "apiVersion": "2019-01-01-preview",
+      "location": "westeurope",
+      "tags": {},
+      "properties": {
+        "description": "Export Azure Security Center data to Log Analytics workspace via policy",
+        "isEnabled": true,
+        "metadata": {
+          "createdBy": "f68ef1f8-7439-4a84-983b-17dd0791e610",
+          "lastUpdatedBy": "f68ef1f8-7439-4a84-983b-17dd0791e610"
+        },
+        "scopes": [
+          {
+            "description": "scope for subscription 539e250b-b64b-4aec-aace-271141f578e5",
+            "scopePath": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5"
+          }
+        ],
+        "sources": [
+          {
+            "eventSource": "SubAssessments"
+          },
+          {
+            "eventSource": "Assessments",
+            "ruleSets": [
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "type",
+                    "propertyType": "String",
+                    "expectedValue": "Microsoft.Security/assessments",
+                    "operator": "Contains"
+                  },
+                  {
+                    "propertyJPath": "properties.metadata.severity",
+                    "propertyType": "String",
+                    "expectedValue": "High",
+                    "operator": "Equals"
+                  }
+                ]
+              },
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "type",
+                    "propertyType": "String",
+                    "expectedValue": "Microsoft.Security/assessments",
+                    "operator": "Contains"
+                  },
+                  {
+                    "propertyJPath": "properties.metadata.severity",
+                    "propertyType": "String",
+                    "expectedValue": "Medium",
+                    "operator": "Equals"
+                  }
+                ]
+              },
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "type",
+                    "propertyType": "String",
+                    "expectedValue": "Microsoft.Security/assessments",
+                    "operator": "Contains"
+                  },
+                  {
+                    "propertyJPath": "properties.metadata.severity",
+                    "propertyType": "String",
+                    "expectedValue": "Low",
+                    "operator": "Equals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "eventSource": "Alerts",
+            "ruleSets": [
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "Severity",
+                    "propertyType": "String",
+                    "expectedValue": "high",
+                    "operator": "Equals"
+                  }
+                ]
+              },
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "Severity",
+                    "propertyType": "String",
+                    "expectedValue": "medium",
+                    "operator": "Equals"
+                  }
+                ]
+              },
+              {
+                "rules": [
+                  {
+                    "propertyJPath": "Severity",
+                    "propertyType": "String",
+                    "expectedValue": "low",
+                    "operator": "Equals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "eventSource": "SecureScores"
+          },
+          {
+            "eventSource": "SecureScoreControls"
+          },
+          {
+            "eventSource": "RegulatoryComplianceAssessment"
+          },
+          {
+            "eventSource": "SecureScoresSnapshot"
+          },
+          {
+            "eventSource": "SecureScoreControlsSnapshot"
+          },
+          {
+            "eventSource": "RegulatoryComplianceAssessmentSnapshot"
+          }
+        ],
+        "actions": [
+          {
+            "workspaceResourceId": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-mgmt/providers/Microsoft.OperationalInsights/workspaces/AfO-law",
+            "actionType": "Workspace"
+          }
+        ]
+      }
+    }
+  ],
+  "outputs": {}
+}

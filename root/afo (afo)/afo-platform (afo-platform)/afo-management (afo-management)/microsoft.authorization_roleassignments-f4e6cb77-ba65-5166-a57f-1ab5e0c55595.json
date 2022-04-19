@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-Log-Analytics",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "8d6248fc-e982-4aa6-bd92-bb059c959d81",
+        "PrincipalId": "6ee14783-0bf7-4616-8728-0500cb3b1cf0",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
         "RoleDefinitionName": "Contributor"
       }

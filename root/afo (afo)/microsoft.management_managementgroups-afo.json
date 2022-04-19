@@ -37,34 +37,6 @@
             {
               "type": "Microsoft.Management/managementGroups",
               "apiVersion": "2020-05-01",
-              "name": "AfO-landingzones",
-              "scope": "/",
-              "properties": {
-                "displayName": "AfO-landingzones",
-                "details": {
-                  "parent": {
-                    "id": "/providers/Microsoft.Management/managementGroups/AfO"
-                  }
-                }
-              }
-            },
-            {
-              "type": "Microsoft.Management/managementGroups",
-              "apiVersion": "2020-05-01",
-              "name": "AfO-decommissioned",
-              "scope": "/",
-              "properties": {
-                "displayName": "AfO-decommissioned",
-                "details": {
-                  "parent": {
-                    "id": "/providers/Microsoft.Management/managementGroups/AfO"
-                  }
-                }
-              }
-            },
-            {
-              "type": "Microsoft.Management/managementGroups",
-              "apiVersion": "2020-05-01",
               "name": "AfO-platform",
               "scope": "/",
               "properties": {
@@ -79,10 +51,38 @@
             {
               "type": "Microsoft.Management/managementGroups",
               "apiVersion": "2020-05-01",
+              "name": "AfO-landingzones",
+              "scope": "/",
+              "properties": {
+                "displayName": "AfO-landingzones",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/AfO"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
               "name": "AfO-sandboxes",
               "scope": "/",
               "properties": {
                 "displayName": "AfO-sandboxes",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/AfO"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "AfO-decommissioned",
+              "scope": "/",
+              "properties": {
+                "displayName": "AfO-decommissioned",
                 "details": {
                   "parent": {
                     "id": "/providers/Microsoft.Management/managementGroups/AfO"

@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-SQL-DB-Auditing",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "92c58bac-024f-4183-9fb1-eb5fcccafef1",
+        "PrincipalId": "e7f2300c-40b2-4bbb-90b0-77666f1ae90d",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"
       }

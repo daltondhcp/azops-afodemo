@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Automation/automationAccounts",
+      "name": "AfO-aauto",
+      "apiVersion": "2021-06-22",
+      "location": "westeurope",
+      "tags": {},
+      "properties": {
+        "sku": {
+          "name": "Basic",
+          "family": null,
+          "capacity": null
+        },
+        "RegistrationUrl": "https://2abddd08-2299-48a0-9d0d-60d36470c4a0.agentsvc.we.azure-automation.net/accounts/2abddd08-2299-48a0-9d0d-60d36470c4a0",
+        "encryption": {
+          "keySource": "Microsoft.Automation",
+          "identity": {
+            "userAssignedIdentity": null
+          }
+        },
+        "privateEndpointConnections": [],
+        "automationHybridServiceUrl": "https://2abddd08-2299-48a0-9d0d-60d36470c4a0.jrds.we.azure-automation.net/automationAccounts/2abddd08-2299-48a0-9d0d-60d36470c4a0",
+        "RuntimeConfiguration": {
+          "powershell": {
+            "builtinModules": {
+              "Az": "7.3.2"
+            }
+          },
+          "powershell7": {
+            "builtinModules": {
+              "Az": "7.3.2"
+            }
+          }
+        },
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "outputs": {}
+}

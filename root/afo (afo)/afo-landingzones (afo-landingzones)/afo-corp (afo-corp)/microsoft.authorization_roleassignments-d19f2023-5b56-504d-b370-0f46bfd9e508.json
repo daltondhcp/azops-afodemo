@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-Private-DNS-Zones",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "81e191b2-18f8-473b-93c3-f6825d1daabb",
+        "PrincipalId": "d36008d3-f7cb-4af6-beb8-91323d2dfb28",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/4d97b98b-1d4f-4787-a291-c67834d212e7",
         "RoleDefinitionName": "Network Contributor"
       }
