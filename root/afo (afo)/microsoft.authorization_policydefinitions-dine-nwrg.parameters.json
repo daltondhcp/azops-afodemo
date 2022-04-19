@@ -7,8 +7,8 @@
         "Name": "Dine-NWRg",
         "ResourceType": "Microsoft.Authorization/policyDefinitions",
         "Properties": {
-          "Description": "Create Resource Group for Network Watcher in the subscriptions for AfO",
-          "DisplayName": "Create Resource Group for Network Watcher in the subscriptions for AfO",
+          "Description": "Create Resource Group for Network Watcher in the subscriptions",
+          "DisplayName": "Create Resource Group for Network Watcher in the subscriptions",
           "Metadata": {
             "version": "1.0.0.0",
             "category": "Telco"
@@ -26,6 +26,13 @@
                 "Disabled"
               ],
               "defaultValue": "DeployIfNotExists"
+            },
+            "location": {
+              "type": "string",
+              "metadata": {
+                "displayName": "Location",
+                "description": "Location for the ResourceGroup"
+              }
             }
           },
           "PolicyRule": {
@@ -47,15 +54,24 @@
                   "location": "westeurope",
                   "properties": {
                     "mode": "incremental",
+                    "parameters": {
+                      "location": {
+                        "value": "[parameters('location')]"
+                      }
+                    },
                     "template": {
                       "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
                       "contentVersion": "1.0.0.0",
-                      "parameters": {},
+                      "parameters": {
+                        "location": {
+                          "type": "string"
+                        }
+                      },
                       "resources": [
                         {
                           "type": "Microsoft.Resources/resourceGroups",
                           "apiversion": "2021-04-01",
-                          "location": "[deployment().location]",
+                          "location": "[parameters('location')]",
                           "name": "NetworkWatcherRG",
                           "properties": {}
                         }

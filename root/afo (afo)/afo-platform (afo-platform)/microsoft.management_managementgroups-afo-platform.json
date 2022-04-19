@@ -37,6 +37,20 @@
             {
               "type": "Microsoft.Management/managementGroups",
               "apiVersion": "2020-05-01",
+              "name": "AfO-identity",
+              "scope": "/",
+              "properties": {
+                "displayName": "AfO-identity",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/AfO-platform"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
               "name": "AfO-management",
               "scope": "/",
               "properties": {
@@ -55,20 +69,6 @@
               "scope": "/",
               "properties": {
                 "displayName": "AfO-connectivity",
-                "details": {
-                  "parent": {
-                    "id": "/providers/Microsoft.Management/managementGroups/AfO-platform"
-                  }
-                }
-              }
-            },
-            {
-              "type": "Microsoft.Management/managementGroups",
-              "apiVersion": "2020-05-01",
-              "name": "AfO-identity",
-              "scope": "/",
-              "properties": {
-                "displayName": "AfO-identity",
                 "details": {
                   "parent": {
                     "id": "/providers/Microsoft.Management/managementGroups/AfO-platform"

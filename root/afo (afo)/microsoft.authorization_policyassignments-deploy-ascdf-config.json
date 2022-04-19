@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-ASCDF-Config",
+      "apiVersion": "2021-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "f68ef1f8-7439-4a84-983b-17dd0791e610",
+        "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/AfO",
+        "NotScopes": null,
+        "DisplayName": "Deploy Microsoft Defender for Cloud configuration",
+        "Description": "Deploy Microsoft Defender for Cloud and Security Contacts",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/AfO/providers/Microsoft.Authorization/policySetDefinitions/Deploy-MDFC-Config",
+        "Parameters": {
+          "emailSecurityContact": {
+            "value": "victorar@hotmail.ch"
+          },
+          "logAnalytics": {
+            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-mgmt/providers/Microsoft.OperationalInsights/workspaces/AfO-law"
+          },
+          "ascExportResourceGroupName": {
+            "value": "AfO-asc-export"
+          },
+          "ascExportResourceGroupLocation": {
+            "value": "westeurope"
+          },
+          "enableAscForServers": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForSql": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForAppServices": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForStorage": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForContainers": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForKeyVault": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForSqlOnVm": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForArm": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForDns": {
+            "value": "DeployIfNotExists"
+          },
+          "enableAscForOssDb": {
+            "value": "DeployIfNotExists"
+          }
+        },
+        "NonComplianceMessages": null
+      }
+    }
+  ],
+  "outputs": {}
+}

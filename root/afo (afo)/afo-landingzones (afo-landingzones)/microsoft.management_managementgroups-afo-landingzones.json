@@ -65,10 +65,10 @@
             {
               "type": "Microsoft.Management/managementGroups",
               "apiVersion": "2020-05-01",
-              "name": "AfO-telco-specialized",
+              "name": "AfO-operator",
               "scope": "/",
               "properties": {
-                "displayName": "AfO-telco-specialized",
+                "displayName": "AfO-operator",
                 "details": {
                   "parent": {
                     "id": "/providers/Microsoft.Management/managementGroups/AfO-landingzones"

@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Enforce-TLS-SSL",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "094081f5-1f4e-4e58-83c6-28095e493964",
+        "PrincipalId": "febc93de-530d-4081-955e-41194f9fd363",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"
       }

@@ -15,7 +15,7 @@
       "apiVersion": "2021-06-01",
       "location": "westeurope",
       "identity": {
-        "PrincipalId": "81e191b2-18f8-473b-93c3-f6825d1daabb",
+        "PrincipalId": "d36008d3-f7cb-4af6-beb8-91323d2dfb28",
         "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
         "Type": "SystemAssigned"
       },
@@ -28,64 +28,64 @@
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/AfO/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Private-DNS-Zones",
         "Parameters": {
           "azureFilePrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net"
           },
           "azureWebPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.webpubsub.azure.com"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.webpubsub.azure.com"
           },
           "azureBatchPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.westeurope.batch.azure.com"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.westeurope.batch.azure.com"
           },
           "azureAppPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io"
           },
           "azureAsrPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/westeurope.privatelink.siterecovery.windowsazure.com"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/westeurope.privatelink.siterecovery.windowsazure.com"
           },
           "azureIoTPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices-provisioning.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices-provisioning.net"
           },
           "azureKeyVaultPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
           },
           "azureSignalRPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net"
           },
           "azureAppServicesPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net"
           },
           "azureEventGridTopicsPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"
           },
           "azureDiskAccessPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
           },
           "azureCognitiveServicesPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"
           },
           "azureIotHubsPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net"
           },
           "azureEventGridDomainsPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"
           },
           "azureRedisCachePrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net"
           },
           "azureAcrPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io"
           },
           "azureEventHubNamespacePrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"
           },
           "azureMachineLearningWorkspacePrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms"
           },
           "azureServiceBusNamespacePrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"
           },
           "azureCognitiveSearchPrivateDnsZoneId": {
-            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"
+            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-privatedns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"
           }
         },
         "NonComplianceMessages": null

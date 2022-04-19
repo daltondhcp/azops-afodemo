@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-VMSS-Monitoring",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "8b4f2e0c-f1e4-4352-b472-41006485ab9f",
+        "PrincipalId": "4afc01ae-6f63-4c55-9788-f900cc743739",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"
       }

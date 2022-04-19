@@ -15,7 +15,7 @@
       "apiVersion": "2021-06-01",
       "location": "westeurope",
       "identity": {
-        "PrincipalId": "8b4f2e0c-f1e4-4352-b472-41006485ab9f",
+        "PrincipalId": "4afc01ae-6f63-4c55-9788-f900cc743739",
         "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
         "Type": "SystemAssigned"
       },
@@ -28,7 +28,7 @@
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
         "Parameters": {
           "logAnalytics_1": {
-            "value": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad/resourceGroups/AfO-mgmt/providers/Microsoft.OperationalInsights/workspaces/AfO-law"
+            "value": "/subscriptions/539e250b-b64b-4aec-aace-271141f578e5/resourceGroups/AfO-mgmt/providers/Microsoft.OperationalInsights/workspaces/AfO-law"
           }
         },
         "NonComplianceMessages": null

@@ -15,7 +15,7 @@
       "apiVersion": "2021-06-01",
       "location": "westeurope",
       "identity": {
-        "PrincipalId": "65abf123-7f37-4b0b-a614-0479971aa99e",
+        "PrincipalId": "7efd99a0-3424-44ec-b344-adde894ae4e1",
         "TenantId": "5663f39e-feb1-4303-a1f9-cf20b702de61",
         "Type": "SystemAssigned"
       },

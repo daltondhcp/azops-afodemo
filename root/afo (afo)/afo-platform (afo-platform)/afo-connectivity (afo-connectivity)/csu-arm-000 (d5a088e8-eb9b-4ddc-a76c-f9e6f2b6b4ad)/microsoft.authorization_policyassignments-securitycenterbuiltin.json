@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "SecurityCenterBuiltIn",
+      "apiVersion": "2021-06-01",
+      "location": null,
+      "properties": {
+        "Scope": "/subscriptions/d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad",
+        "NotScopes": null,
+        "DisplayName": "ASC Default (subscription: d5a088e8-eb9b-4ddc-a76c-f9e6f2b6b4ad)",
+        "Description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+        "Parameters": {},
+        "NonComplianceMessages": null
+      }
+    }
+  ],
+  "outputs": {}
+}

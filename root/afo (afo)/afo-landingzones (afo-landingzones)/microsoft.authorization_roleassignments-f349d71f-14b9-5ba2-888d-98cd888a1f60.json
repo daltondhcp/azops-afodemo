@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-AKS-Policy",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "4f6a4923-c727-4af1-9d9a-b781087acb2f",
+        "PrincipalId": "8ac154fe-1dcb-43f9-877b-c8a43d8af6dc",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/ed7f3fbd-7b88-4dd4-9017-9adb7ce333f8",
         "RoleDefinitionName": "Azure Kubernetes Service Contributor Role"
       }

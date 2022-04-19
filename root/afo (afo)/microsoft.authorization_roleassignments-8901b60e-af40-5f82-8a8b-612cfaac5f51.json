@@ -16,7 +16,7 @@
       "properties": {
         "DisplayName": "Deploy-VM-Monitoring",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "74e7d8dc-c5e1-42cb-b210-d893d63ff1ed",
+        "PrincipalId": "8691333d-4b6c-401c-8039-30d0955d5b55",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"
       }
